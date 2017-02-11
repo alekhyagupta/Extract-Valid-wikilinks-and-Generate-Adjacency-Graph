@@ -6,6 +6,9 @@ enwikilatestpagesarticles.
 xml
 You can truncate this file to smaller size for debugging.
 In this lab, your job is to generate an adjacency graph from the dataset provided.
+
+
+
 1. Write a MapReduce job that extracts wikilinks and also remove all the red links . The
 dataset contains, for each article, a list of links going out of that article, as well as the
 articles title. The input for this job should be the Wikipedia dataset above, and the job
@@ -31,6 +34,11 @@ But “abc” in (A) and “a” in (B) may be a red link which basically means 
 with title “abc” and “a” in the wiki dataset. You need to exclude all red links in this job.
 Note: we need to replace all the empty space ‘ ’ in the Title and links(title of other pages)
 with an underline ‘_’. No other processing is needed in this project.
+
+
+
+
+
 2. Write another MapReduce job to generate the Adjacency graph, i.e a graph with the
 format:
 page_title1 link1 link2 …
